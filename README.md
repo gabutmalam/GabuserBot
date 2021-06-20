@@ -31,7 +31,7 @@
 [![Deploy](https://telegra.ph/file/2cd25b60db49392dbe9da.jpg)](https://t.me/gabuserbot)
 
 
-<h3 align="center">REPO RAM-UBOT DIBUAT KARNA LAGI GABUT AJA SI HAHA.</h3>
+<h3 align="center">REPO INI DIBUAT BUAT TEST SAMBIL NYOBA NYOBA AJA YA BRO.</h3>
 <p align="center">&nbsp;</p>
 
 
