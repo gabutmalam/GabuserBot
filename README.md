@@ -18,17 +18,17 @@
 [<img src="https://media0.giphy.com/media/ya4eevXU490Iw/giphy.gif">](https://t.me/maafgausahsokap)
 ##
 ##
-# KALO FORK TUH KASIH BINTANG YA TOLOL!
+# TESTING...!
 
 
-## JOIN DULU TOT!!:
+## JOIN DULU Ngab!!:
 
 <a href="https://t.me/ramubotinfo"><img src="https://img.shields.io/badge/Channel-%20RAM UBOT-black.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/teman_random"><img src="https://img.shields.io/badge/Join-TEMAN%20RANDOM-purple.svg?style=for-the-badge&logo=Telegram"></a>
 ##
 
 # JANGAN BINGUNG BUAT DEPLOY!
-[![Deploy](https://telegra.ph/file/be5a4a2cb6aac37ca7945.jpg)](https://t.me/ootspambot)
+[![Deploy](https://telegra.ph/file/2cd25b60db49392dbe9da.jpg)](https://t.me/gabuserbot)
 
 
 <h3 align="center">REPO RAM-UBOT DIBUAT KARNA LAGI GABUT AJA SI HAHA.</h3>
