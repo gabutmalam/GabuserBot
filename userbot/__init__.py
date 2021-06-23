@@ -275,7 +275,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "```║Selamat Akunmu Sudah Aktif..🔥🔥║\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\nJika Tidak Bisa Di .ping\nSilahkan Anda\nCek viewlogs\nPada heroku Anda.\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰```"
+    "BOTLOG_MSG") or "``➤ Cheat Activead...!!\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\nAnda bisa test dengan perintah .ping\njika **Gagal**\nSilahkan Cek viewlogs\nPada Akun Heroku Anda.\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯```"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -488,15 +488,15 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"Woeyy..!!! [{get_display_name(u)}](tg://user?id={u.id}) Ngapain lu ngab di\n**GabuserBot**\nKalo kau mau juga mending pergi ke\n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
+                    f"Woeyy..!!! [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang di\n**GabuserBot**\nAnda Tertarik Buat Seperti itu Silahkan Kunjungi\n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
                     buttons=[
                         [
                              Button.url("📢 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📢",
-                                        "t.me/Ramubotinfo"),
-                             Button.url("🚨 𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 🚨",
-                                        "t.me/geezSupportGroup")],
-                             [Button.url("👤 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 👤",
-                                        "t.me/MaafGausahSokap")],
+                                        "t.me/ramubotinfo"),
+                             Button.url("🦋 **SuperGroup** 🦋",
+                                        "t.me/b0oooot")],
+                             [Button.url("👤 **Developer** 👤",
+                                        "t.me/cantik")],
                     ]
                 )
 
@@ -590,7 +590,7 @@ with bot:
                             Button.url("•INSTAGRAM• ",
                                    f"{IG_ALIVE}")],
                         [custom.Button.inline(
-                            "🔥𝗘𝗫𝗜𝗧🔥", b"close")],
+                            "🍂 Exit 🍂", b"close")],
                     ]
                 )
 
