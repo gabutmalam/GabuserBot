@@ -178,7 +178,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM", None)
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "⭐𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐"
+REPO_NAME = os.environ.get("REPO_NAME") or "𝑮𝒂𝒃𝒖𝒔𝒆𝒓𝑩𝒐𝒕"
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -197,7 +197,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "RAM-UBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "𝑮𝒂𝒃𝒖𝒔𝒆𝒓𝑩𝒐𝒕")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "7.0")
@@ -220,15 +220,15 @@ HELP_LOGO = os.environ.get(
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/ramadh20"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "💫"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🕊"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/teman_random"
+    "GROUP_LINK") or "t.me/cokelat27k"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/MaafGausahSokap"
+    "OWNER_BOT") or "t.me/cklt27"
 
 
 # Last.fm Module
@@ -275,7 +275,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "``➤ Cheat Activead...!!\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\nAnda bisa test dengan perintah .ping\njika **Gagal**\nSilahkan Cek viewlogs\nPada Akun Heroku Anda.\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯```"
+    "BOTLOG_MSG") or "**➤ Cheat Activead...!!**\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\nAnda bisa Test\n dengan perintah ".ping" jika 𝐆𝐚𝐠𝐚𝐥\nSilahkan Cek Viewlogs\nPada Akun Heroku Anda.\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -491,12 +491,12 @@ with bot:
                     f"Woeyy..!!! [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang di\n**GabuserBot**\nAnda Tertarik Buat Seperti itu Silahkan Kunjungi\n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
                     buttons=[
                         [
-                             Button.url("📢 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📢",
-                                        "t.me/ramubotinfo"),
-                             Button.url("🦋 **SuperGroup** 🦋",
+                             Button.url("𓃖 Channel 𓃖",
+                                        "t.me/cokelat27"),
+                             Button.url("**SuperGroup**",
                                         "t.me/b0oooot")],
                              [Button.url("👤 **Developer** 👤",
-                                        "t.me/cantik")],
+                                        "t.me/cklt27as")],
                     ]
                 )
 
@@ -522,7 +522,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"{REPO_NAME}\n\n💖 **Owner Bot : {DEFAULTUSER}**\n\n⚜ **Versi Bot :** `7.0`\n⚜ **Module :** `{len(plugins)}`\n\n🔥 **Developer : [{DEFAULTUSER}]({OWNER_BOT}) **".format(
+                    text=f"{REPO_NAME}\n\n **Owner Bot : {DEFAULTUSER}**\n\n⚜ **Versi Bot :** `7.0`\n⚜ **Module :** `{len(plugins)}`\n\n🔥 **Developer : [{DEFAULTUSER}]({OWNER_BOT}) **".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -574,7 +574,7 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @Ram-ubot
+            if event.query.user_id == uid:  # @name-ubot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
                     file=ramlogo,
@@ -582,9 +582,9 @@ with bot:
                     buttons=[
                         [
                             Button.url(f"{REPO_NAME}",
-                                       "t.me/ramubotinfo"),
+                                       "t.me/cokelat27"),
                             Button.url("•SUPPORT• ", 
-                                       "t.me/GeezSupportGroup")],
+                                       "t.me/cokelat27k")],
                         [Button.url("•OWNER• ",
                                     f"{OWNER_BOT}"),
                             Button.url("•INSTAGRAM• ",
