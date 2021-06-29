@@ -280,7 +280,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "➤ Cheat Activead..!!\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\nAnda bisa Test\n dengan perintah ".ping" jika 𝐆𝐚𝐠𝐚𝐥\nSilahkan Cek Viewlogs\nPada Akun Heroku Anda.\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯"
+    "BOTLOG_MSG") or "➤ 𝐂𝐡𝐞𝐚𝐭 𝐀𝐜𝐭𝐢𝐯𝐚𝐞𝐝..!!\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\nAnda bisa Test\n dengan perintah '.ping' jika 𝐆𝐚𝐠𝐚𝐥\nSilahkan Cek Viewlogs\nPada Akun Heroku Anda.\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
