@@ -5,7 +5,6 @@
 # Ported @MaafGausahSokap / JANGAN DI APUS BRO..
 """Userbot initialization."""
 
-import telegram
 import logging
 import os
 import sys
