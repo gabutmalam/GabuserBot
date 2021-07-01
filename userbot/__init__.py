@@ -6,7 +6,6 @@
 """Userbot initialization."""
 
 import telegram
-import telegram.ext as tg
 import logging
 import os
 import sys
