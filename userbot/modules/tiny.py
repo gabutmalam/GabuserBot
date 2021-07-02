@@ -9,9 +9,9 @@ from userbot import CMD_HELP, bot
 async def _(event):
     reply = await event.get_reply_message()
     if not (reply and (reply.media)):
-        await event.edit("`Mohon Balas Ke Sticker`")
+        await event.edit("Mohon Balas ke Sticker..")
         return
-    xx = await event.edit("`Kecilin Tikell!!....`")
+    xx = await event.edit("__Mengecilkan sticker, Springggg.....__")
     ik = await bot.download_media(reply)
     im1 = Image.open("userbot/RAMUBOT.png")
     if ik.endswith(".tgs"):
@@ -79,5 +79,5 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "tiny": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tiny`\
+    "tiny": "**Command**: `.tiny`\
     \nUsage : Untuk Memperkecil Sticker."})
