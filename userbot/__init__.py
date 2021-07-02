@@ -180,7 +180,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM", None)
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "𝑮𝒂𝒃𝒖𝒔𝒆𝒓𝑩𝒐𝒕"
+REPO_NAME = os.environ.get("REPO_NAME") or " ▄︻デ 𝐆𝐚𝐛𝐮𝐬𝐞𝐫𝐁𝐨𝐭 ══━一 "
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -199,7 +199,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "𝑮𝒂𝒃𝒖𝒔𝒆𝒓𝑩𝒐𝒕")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", " ▄︻デ 𝐆𝐚𝐛𝐮𝐬𝐞𝐫𝐁𝐨𝐭 ══━一 ")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "7.0")
@@ -277,7 +277,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "➤ 𝐂𝐡𝐞𝐚𝐭 𝐀𝐜𝐭𝐢𝐯𝐚𝐞𝐝..!!\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\nAnda bisa Test\n dengan perintah '.ping' jika 𝐆𝐚𝐠𝐚𝐥\nSilahkan Cek Viewlogs\nPada Akun Heroku Anda.\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯"
+    "BOTLOG_MSG") or "'**➤ Cheat Activaed..!!**'\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\n\nAnda bisa Test\ndengan perintah '.ping' jika Gagal\nSilahkan Cek Viewlogs\nPada Akun Heroku Anda.\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
