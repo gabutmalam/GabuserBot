@@ -31,7 +31,7 @@ from userbot.events import register
 
 # ====================== CONSTANT ===============================
 INVALID_MEDIA = "```Maaf Media Tidak Valid.```"
-PP_CHANGED = "```Foto Profil Telah Berubah Jadi Foto Bugil```"
+PP_CHANGED = "```Foto Profil Telah Berubah Jadi Foto Aestetik```"
 PP_TOO_SMOL = "```Gambar Terlalu Kecil, Mohon Gunakan Yang Lebih Besar.```"
 PP_ERROR = "```Kegagalan Terjadi Saat Proses Gambar, Foto Profil Gagal Diubah.```"
 
@@ -126,7 +126,7 @@ async def count(event):
     bc = 0
     b = 0
     result = ""
-    await event.edit("`Sedang Dalam Proses....`")
+    await event.edit("`sek loading sikek....`")
     dialogs = await bot.get_dialogs(limit=None, ignore_migrated=True)
     for d in dialogs:
         currrent_entity = d.entity
