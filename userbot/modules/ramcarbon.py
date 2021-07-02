@@ -79,8 +79,8 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Created by [ラマダニ。](https://t.me/maafgausahsokap/)\
-        \nGroup [SPAM BOT](https://t.me/ootspambot/)",
+        caption="Created by [🌦 Searching... ](https://t.me/cklt27asy/)\
+        \nGroup [Cokelat 27°](https://t.me/cokelat27k/)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -94,7 +94,7 @@ async def carbon_api(e):
 @register(outgoing=True, pattern="^.carbon2")
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
-    await e.edit("`Memulai Proses..`")
+    await e.edit("__Proccessing...")
     CARBON = 'https://carbon.now.sh/?bg=rgba(239%2C40%2C44%2C1)&t=one-light&wt=none&l=application%2Ftypescript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code={code}'
     global CARBONLANG
     textx = await e.get_reply_message()
@@ -104,7 +104,7 @@ async def carbon_api(e):
     elif textx:
         pcode = str(textx.message)  # Importing message to module
     code = quote_plus(pcode)  # Converting to urlencoded
-    await e.edit("`Proses di..\n25%`")
+    await e.edit("`Proccess..\n25%`")
     if os.path.isfile("/root/userbot/.bin/carbon.png"):
         os.remove("/root/userbot/.bin/carbon.png")
     url = CARBON.format(code=code, lang=CARBONLANG)
@@ -120,7 +120,7 @@ async def carbon_api(e):
     driver = webdriver.Chrome(executable_path=CHROME_DRIVER,
                               options=chrome_options)
     driver.get(url)
-    await e.edit("`Proses di..\n50%`")
+    await e.edit("`Proccess..\n50%`")
     download_path = '/root/userbot/.bin'
     driver.command_executor._commands["send_command"] = (
         "POST", '/session/$sessionId/chromium/send_command')
@@ -145,8 +145,8 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="created by [ラマダニ。](https://t.me/maafgausahsokap/)\
-        \nGroup Support [Dawn Labs](https://t.me/ootspambot/)",
+        caption="Created by [🌦 Searching... ](https://t.me/cklt27asy/)\
+        \nGroup [Cokelat 27°](https://t.me/cokelat27k/)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -205,14 +205,14 @@ async def carbon_api(e):
     # Waiting for downloading
     while not os.path.isfile("/root/userbot/.bin/carbon.png"):
         await sleep(0.5)
-    await e.edit("`Sudah Sampai..\n100%`")
+    await e.edit("`Waiting..\n100%`")
     file = '/root/userbot/.bin/carbon.png'
     await e.edit("`Mengirim..`")
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Created By [ラマダニ。](https://t.me/maafgausahsokap/)\
-        \nGroup Support [Spam](https://t.me/ootspambot/)",
+        caption="Created by [🌦 Searching... ](https://t.me/cklt27asy/)\
+        \nGroup [Cokelat 27°](https://t.me/cokelat27k/)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -277,8 +277,8 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Created by [ラマダニ。](https://t.me/maafgausahsokap/),\
-        \nGroup Support [Group Spam](https://t.me/ootspambot)",
+        caption="Created by [🌦 Searching... ](https://t.me/cklt27asy/)\
+        \nGroup [Cokelat 27°](https://t.me/cokelat27k/)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -343,8 +343,8 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Created by [ラマダニ。](https://t.me/maafgausahsokap/),\
-        \nGroup Support [Spam](https://t.me/ootspambot/)",
+        caption="Created by [🌦 Searching... ](https://t.me/cklt27asy/)\
+        \nGroup [Cokelat 27°](https://t.me/cokelat27k/)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -358,5 +358,5 @@ async def carbon_api(e):
 CMD_HELP.update({
     "carbon":
     "`.carbon`value <values=1,2,3,4>\
-        \nUsage:reply or type .carbon1 or 2,3,4 value and beautify your text."
+        \nUsage:reply or type .carbon1 or 2,3,4 value and beautifull your text."
 })
