@@ -120,7 +120,7 @@ async def kickme(leave):
                      "╬═╬ \n"
                      "╬═╬ \n"
                      "╬═╬ \n"
-                     "╬═╬ AKU PERGI YA NGENTOT, BABAY! \n"
+                     "╬═╬ Aku mau traveling dulu, byebye... \n"
                      "╬═╬☻/ \n"
                      "╬═╬/▌ \n"
                      "╬═╬/ \\ \n")
@@ -441,25 +441,25 @@ async def _(event):
 
 CMD_HELP.update({
     "chat":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getid`\
-\n↳ : Dapatkan ID dari media Telegram mana pun, atau pengguna mana pun\
+    "**Command**: `.getid`\
+\n➢ : Dapatkan ID dari media Telegram mana pun, atau pengguna mana pun\
 \n\n: `.getbot`\
-\n↳ : Dapatkan Bot dalam obrolan apa pun.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.logit`\
-\n↳ : Meneruskan pesan yang telah Anda balas di grup log bot Anda.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.exit`\
-\n↳ : Keluar dari grup.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unmutechat`\
-\n↳ : Membuka obrolan yang dibisukan.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.mutechat`\
-\n↳ : Memungkinkan Anda membisukan obrolan apa pun.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.link` <username/userid>: <opsional teks> (atau) balas pesan seseorang dengan .link <teks opsional>\
-\n↳ : Buat tautan permanen ke profil pengguna dengan teks ubahsuaian opsional.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.regexninja` enable/disabled\
-\n↳ : Mengaktifkan/menonaktifkan modul ninja regex secara global.\
+\n➢ : Dapatkan Bot dalam obrolan apa pun.\
+\n\n**Command**: `.logit`\
+\n➢ : Meneruskan pesan yang telah Anda balas di grup log bot Anda.\
+\n\n**Command**: `.exit`\
+\n➢ : Keluar dari grup.\
+\n\n**Command**: `.unmutechat`\
+\n➢ : Membuka obrolan yang dibisukan.\
+\n\n**Command**: `.mutechat`\
+\n➢ : Memungkinkan Anda membisukan obrolan apa pun.\
+\n\n**Command**: `.link` <username/userid>: <opsional teks> (atau) balas pesan seseorang dengan .link <teks opsional>\
+\n➢ : Buat tautan permanen ke profil pengguna dengan teks ubahsuaian opsional.\
+\n\n**Command**: `.regexninja` enable/disabled\
+\n➢ : Mengaktifkan/menonaktifkan modul ninja regex secara global.\
 \nModul Regex Ninja membantu menghapus pesan pemicu bot regex.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.chatinfo [opsional: <reply/tag/chat id/invite link>]`\
-\n↳ : Mendapatkan info obrolan. Beberapa info mungkin dibatasi karena izin yang hilang..\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.invite` \
-\n↳ : Menambahkan pengguna ke obrolan, bukan ke pesan pribadi. "
+\n\n**Command**: `.chatinfo [opsional: <reply/tag/chat id/invite link>]`\
+\n➢ : Mendapatkan info obrolan. Beberapa info mungkin dibatasi karena izin yang hilang..\
+\n\n**Command**: `.invite` \
+\n➢ : Menambahkan pengguna ke obrolan, bukan ke pesan pribadi. "
 })
