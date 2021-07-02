@@ -442,7 +442,7 @@ async def typewriter(typew):
     await typew.edit("`Assalamu'alaiku`")
     await typew.edit("`Assalamu'alaikum`")
     sleep(3)
-    await typew.edit("**YANG GA JAWAB, FIX ATHEISS!!**")
+    await typew.edit("**Yang ga jawab, fix ga dapet pahala...**")
 # Create by myself @localheart
 
 CMD_HELP.update({
