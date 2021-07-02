@@ -27,15 +27,15 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
-    f"**╭━━━━━━━━━━━━━━━━━╮**\n    **🌟SELAMAT DATANG🌟**\n"
-    "**╰━━━━━━━━━━━━━━━━━╯**\n"
+    f"╭━━━━━━━━━━━━━━━━━╮\n     **🧜🏻‍♂️Welcome Gaes🧜🏻‍♂️**\n"
+    "╰━━━━━━━━━━━━━━━━━╯\n"
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-    f"**ANAK KONTOL ANAK NGENTOT,KALO NGECHAT MAJIKAN {DEFAULTUSER} ITU SALAM,\nHABIS ITU SABAR TUNGGU MAJIKAN GUA BALES,\nKALO GA DI BALES - BALES, LU JANGAN NYEPAM KONTOL, APA LAGI LU NGECHAT NYA CUMA MINTA VCS, BISA GUA BLOKIR!! KALO NYEPAM JUGA TAR GUA BLOKIR!!!! TUNGGU SI {DEFAULTUSER} NERIMA PESAN LU**\n"
+    f"** 🛎️. . .OwO. . .🛎️  ,Arigatou gozaimasu sudah chat orang Tampan{DEFAULTUSER} sebelumnya Salam dulu ya..\nMohon tunggu Sebentar...\nJika tidak dibalas, mohon jangan spam ya, tunggu sampai si {DEFAULTUSER} Approve your Message**\n"
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
     "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
-    "┣[• MASUK AJA KE @TEMAN_RANDOM\n"
+    "┣[• Silahkan Masuk ke @cokelat27k\n"
     "┣[• PESAN OTOMATIS\n"
-    "┣[• BY RAM-UBOT\n"
+    "┣[• BY Searching...\n"
     "╰✠╼━━━━━━❖━━━━━━━✠╯")
 # =================================================================
 
@@ -94,7 +94,7 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > 5:
                 await event.respond(
-                    "`Udah Gua bilang, Sabaran napa si ah,Gua blok kan luh!`\n"
+                    "Wait, tolong sabar sebentar ya..\n"
                     "`Menunggu Pesan di terima.`"
                 )
 
@@ -234,7 +234,7 @@ async def approvepm(apprvpm):
     try:
         approve(uid)
     except IntegrityError:
-        return await apprvpm.edit("`Pesan Di terima ya ngentot!`")
+        return await apprvpm.edit("Pesan Anda telah Diterima...")
 
     await apprvpm.edit(f"`Baik` [{name0}](tg://user?id={uid}) `, Pesan mu sudah diterima.`")
     await apprvpm.delete(getmsg)
@@ -266,7 +266,7 @@ async def disapprovepm(disapprvpm):
         name0 = str(aname.first_name)
 
     await disapprvpm.edit(
-        f"`Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) `Pesan Anda Telah Ditolak, Mohon Jangan Melakukan Spam Ke Room Chat!\nBaru Chat aja di tolak, Jelek banget si lu!`"
+        f"`Maaf` [{name0}](tg://user?id={disapprvpm.chat_id}) Pesan Anda Telah Ditolak, Mohon Jangan Melakukan Spam Ke Room Chat!\nBaru Chat aja udah ditolak, Mwehehehe..."
     )
 
     if BOTLOG:
@@ -286,12 +286,12 @@ async def blockpm(block):
         aname = replied_user.id
         name0 = str(replied_user.first_name)
         await block.client(BlockRequest(aname))
-        await block.edit("`Lu jamet, Maaf Gua Blok!`")
+        await block.edit("Sorry i'll block your message..")
         uid = replied_user.id
     else:
         await block.client(BlockRequest(block.chat_id))
         aname = await block.client.get_entity(block.chat_id)
-        await block.edit("`Lu jamet, Maaf Gua Blok!`")
+        await block.edit("Sorry i'll block your message..")
         name0 = str(aname.first_name)
         uid = block.chat_id
 
@@ -317,7 +317,7 @@ async def unblockpm(unblock):
         replied_user = await unblock.client.get_entity(reply.from_id)
         name0 = str(replied_user.first_name)
         await unblock.client(UnblockRequest(replied_user.id))
-        await unblock.edit("`Udah Gua Unblok, Jangan Ngejamet lagi!`")
+        await unblock.edit("Pesan Anda sudah Saya Unblock..")
 
     if BOTLOG:
         await unblock.client.send_message(
@@ -337,7 +337,7 @@ async def add_pmsg(cust_msg):
         await cust_msg.edit("`Running on Non-SQL mode!`")
         return
 
-    await cust_msg.edit("`Sedang Memproses...`")
+    await cust_msg.edit("Sedang Memproses...")
     conf = cust_msg.pattern_match.group(1)
 
     custom_message = sql.gvarstatus("unapproved_msg")
@@ -358,7 +358,7 @@ async def add_pmsg(cust_msg):
             msg = message.message  # get the plain text
             sql.addgvar("unapproved_msg", msg)
         else:
-            return await cust_msg.edit("`Mohon Balas Ke Pesan`")
+            return await cust_msg.edit("Mohon Balas Ke Pesan")
 
         await cust_msg.edit("`Pesan Berhasil Disimpan Ke Room Chat`")
 
@@ -402,7 +402,7 @@ async def permitpm(event):
             pm_permit_sql.approve(
                 chats.id, "`Boss Saya Mengirim Pesan Untuk anda😱`")
             await borg.send_message(
-                chats, "**Menerima Pesan!, Pengguna Terdeteksi Adalah Bos Rama**"
+                chats, "**Menerima Pesan!, Pengguna Terdeteksi Adalah Bos Cokelat27..**"
             )
 
 CMD_HELP.update(
