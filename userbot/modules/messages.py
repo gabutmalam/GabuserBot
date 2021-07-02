@@ -59,7 +59,7 @@ async def purgeme(delme):
 
     smsg = await delme.client.send_message(
         delme.chat_id,
-        "`Berhasil Menghilangkan Jejak Chatsex,` " + str(count) + " `Jejak Chatsex telah terhapus`",
+        "Success for delete your message.. " + str(count) + "Pesan Anda Success dihapus..",
     )
     """
     if BOTLOG:
@@ -82,14 +82,14 @@ async def delete_it(delme):
             """
             if BOTLOG:
                 await delme.client.send_message(
-                    BOTLOG_CHATID, "`Berhasil Menghapus Pesan ⛧`")
+                    BOTLOG_CHATID, "Success delete message..🕊")
             """
         except rpcbaseerrors.BadRequestError:
-            await delme.edit("`Tidak Bisa Menghapus Pesan`")
+            await delme.edit("Tidak Bisa Menghapus Pesan!")
             """
             if BOTLOG:
                 await delme.client.send_message(
-                    BOTLOG_CHATID, "`Tidak Bisa Menghapus Pesan`")
+                    BOTLOG_CHATID, "Tidak bisa menghapus pesan..!")
             """
 
 
@@ -109,8 +109,9 @@ async def editer(edit):
     """
     if BOTLOG:
         await edit.client.send_message(BOTLOG_CHATID,
-                                       "`Berhasil Mengedit Pesan ツ`")
-   """
+                                       "Berhasil mengedit pesan..")
+                                       
+                                       """
 
 
 @register(outgoing=True, pattern=r"^\.sd")
@@ -130,14 +131,14 @@ async def selfdestruct(destroy):
 
 
 CMD_HELP.update({"purge": ">`.purge`"
-                 "\nUsage: Membersihkan semua pesan mulai dari pesan yang dibalas.",
+                 "\n➢ Usage: Membersihkan semua pesan mulai dari pesan yang dibalas.",
                  "purgeme": ">`.purgeme <angka>`"
-                 "\nUsage: Menghapus jumlah pesan anda, yang mau anda hapus.",
+                 "\n➢ Usage: Menghapus jumlah pesan anda, yang mau anda hapus.",
                  "del": ">`Del`"
-                 "\nUsage: Menghapus pesan, balas ke pesan.",
-                 "edit": ">`.edit <pesan baru>`"
-                 "\nUsage: Ganti pesan terakhir Anda dengan <pesan baru>.",
-                 "sd": ">`.sd <x> <pesan>`"
-                 "\nUsage: Membuat pesan yang hancur sendiri dalam x detik."
+                 "\n➢ Usage: Menghapus pesan, balas ke pesan.",
+                 "edit": ">.edit <pesan baru>"
+                 "\n➢ Usage: Ganti pesan terakhir Anda dengan <pesan baru>.",
+                 "sd": ">.sd <x> <pesan>"
+                 "\n➢ Usage: Membuat pesan yang hancur sendiri dalam x detik."
                  "\nJaga agar detik di bawah 100 karena bot Anda akan tidur.",
                  })
