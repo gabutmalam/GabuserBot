@@ -20,7 +20,7 @@ async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
     time_list = []
-    time_suffix_list = ["Seconds", "Minutes", "Hours", "Day"]
+    time_suffix_list = ["Sec", "M", "H", "D"]
 
     while count < 4:
         count += 1
@@ -43,7 +43,7 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(outgoing=True, pattern="^Sping$")
+@register(outgoing=True, pattern="^.sping$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     await get_readable_time((time.time() - StartTime))
@@ -57,20 +57,20 @@ async def redis(pong):
     await pong.edit("__Bentar...__")
     await pong.edit("__Bentar....__")
     await pong.edit("__Nah!!__")
-    await pong.edit("🐋")
+    await pong.edit("🚑")
     await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"╭━━━━━━━━━━━━━━━━━╮ \n"
                     f"        {REPO_NAME} \n"
                     f"  ✠╼━━━━━━❖━━━━━━━✠ \n"
-                    f"        • sɪɢɴᴀʟ  : `%sms` \n"
-                    f"        • ᴏᴡɴᴇʀ   : `{ALIVE_NAME}` \n"
-                    f"        • ʙᴏᴛ ᴠᴇʀ  : `7.0` \n"
+                    f"        • sɪɢɴᴀʟ  : %sms \n"
+                    f"        • ᴏᴡɴᴇʀ   : {ALIVE_NAME} \n"
+                    f"        • ʙᴏᴛ ᴠᴇʀ  : 7.0 \n"
                     f"╰━━━━━━━━━━━━━━━━━╯ \n" % (duration))
 
 
-@register(outgoing=True, pattern="^Lping$")
+@register(outgoing=True, pattern="^.lping$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
@@ -87,7 +87,7 @@ async def redis(pong):
                     f"`{uptime}` \n" % (duration))
 
 
-@register(outgoing=True, pattern="^Xping$")
+@register(outgoing=True, pattern="^.xping$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
@@ -114,7 +114,7 @@ async def redis(pong):
                     f"╰✠╼━━━━━━❖━━━━━━━✠╯\n" % (duration))
 
 
-@register(outgoing=True, pattern="^Ping$")
+@register(outgoing=True, pattern="^.Ping$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
@@ -151,10 +151,10 @@ async def redis(pong):
     await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**█▀█ █▀█ █▄░█ █▀▀ █\n█▀▀ █▄█ █░▀█ █▄█ ▄**\n\n✥ ✪ Mᴀsᴛᴇʀ: @CKLT27\n**✥ ✪ Tɪᴍᴇ Tᴀᴋᴇɴ:** : %sms\n**▄︻デ 𝐁𝐨𝐭 𝐔𝐩𝐭𝐢𝐦𝐞 ══━一** : {uptime}" % (duration))
+    await pong.edit(f"**█▀█ █▀█ █▄░█ █▀▀ █\n█▀▀ █▄█ █░▀█ █▄█ ▄**\n\n**✥ ✪ Mᴀsᴛᴇʀ:** __@CKLT27Asy__\n**✥ ✪ Tɪᴍᴇ Tᴀᴋᴇɴ:** : %sms\n▄︻デ 𝐁𝐨𝐭 𝐔𝐩𝐭𝐢𝐦𝐞 ══━一 : {uptime}" % (duration))
 
 
-@register(outgoing=True, pattern="^Speed$")
+@register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):
     """ For .speed command, use SpeedTest to check server speeds. """
     await spd.edit("`Menjalankan Tes Kecepatan Jaringan, Mohon Tunggu...✨`")
@@ -194,7 +194,7 @@ def speed_convert(size):
     return f"{round(size, 2)} {units[zero]}"
 
 
-@register(outgoing=True, pattern="^Pong$")
+@register(outgoing=True, pattern="^.Pong$")
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     start = datetime.now()
@@ -208,9 +208,9 @@ async def pingme(pong):
 
 
 CMD_HELP.update({
-    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Ping` | `Lping` | `Xping` | `.ping` | `Sping`\
-         \n↳ : Untuk Menunjukkan Ping Bot Anda.\
-         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Speed`\
-         \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
-         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Pong`\
-         \n↳ : Sama Seperti Perintah Ping."})
+    "ping": "**Command**: `Ping` | `Lping` | `Xping` | `.ping` | `Sping`\
+         \n➢ : Untuk Menunjukkan Ping Bot Anda.\
+         \n\n**Command**: `Speed`\
+         \n➢ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
+         \n\n**Command**: `Pong`\
+         \n➢ : Sama Seperti Perintah Ping."})
