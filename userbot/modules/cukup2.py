@@ -29,6 +29,6 @@ async def _(event):
 CMD_HELP.update(
     {
         "cukup2": "**Command**: `.uball\
-    \n↳ : Membatalkan semua Ban Di Anggota Grup."
+    \n➢ : Membatalkan semua Ban Di Anggota Grup."
     }
 )
