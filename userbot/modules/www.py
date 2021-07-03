@@ -107,14 +107,14 @@ async def redis(pong):
     await pong.edit("🚑__Mwehehehe..__")
     await pong.edit("🚑__canda bu..__")
     await pong.edit("**To be continue..**")
-    await pong.edit("
+    await pong.edit("Asyem tnan kok build sampe brapa kali lah ni..")
     await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"    ➳༻❀✿❀༺➳ \n 
                     f"-ˏˋ⋆ ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ ⋆ˊˎ- \n 
                     f"  ║▌│█║▌│ █║▌│█│║▌║ \n"
-                    f"   **Si** __Tampan__ **As** \n"
+                    f"   **Si**__Tampan__ **As** \n"
                     f"  ━─━────༺༻────━─━ \n"
                     f"   • sɪɢɴᴀʟ  : %sms \n"
                     f"   • ᴏᴡɴᴇʀ   : {ALIVE_NAME} \n"
