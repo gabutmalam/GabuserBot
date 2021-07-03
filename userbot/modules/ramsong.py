@@ -84,10 +84,10 @@ async def download_video(event):
         await event.edit("Ada kesalahan selama pemerosesan posting.")
         return
     except UnavailableVideoError:
-        await event.edit("`Media tidak tersedia dalam format yang diminta.`")
+        await event.edit("Media tidak tersedia dalam format yang diminta.")
         return
     except XAttrMetadataError as XAME:
-        await event.edit(f"`{XAME.code}: {XAME.msg}\n{XAME.reason}`")
+        await event.edit(f"{XAME.code}: {XAME.msg}\n{XAME.reason}")
         return
     except ExtractorError:
         await event.edit("Terjadi kesalahan selama ekstraksi info.")
@@ -101,10 +101,14 @@ async def download_video(event):
     except BaseException:
         pass
     upteload = """
+    
+    °.✩┈┈∘*┈🌙┈*∘┈┈✩.°
     Sem Sedang Menyanyi, Mohon tunggu Sebentar...
     Judul - {}
     Artis - {}
-""".format(
+    °.✩┈┈∘*┈🌙┈*∘┈┈✩.°
+    
+    """.format(
         rip_data["title"], rip_data["uploader"]
     )
     await event.edit(f"`{upteload}`")
