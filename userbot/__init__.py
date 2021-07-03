@@ -277,7 +277,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "'**➤ Cheat Activaed..!!**'\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\n\nAnda bisa Test\ndengan perintah '.ping' jika Gagal\nSilahkan Cek Viewlogs\nPada Akun Heroku Anda.\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯"
+    "BOTLOG_MSG") or "**➤ Cheat Activaed..**\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\n\nAnda bisa Test\ndengan perintah '.ping' jika Gagal\nSilahkan Cek Viewlogs\nPada Akun Heroku Anda.\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -524,7 +524,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"{REPO_NAME}\n\n **Owner Bot : {DEFAULTUSER}**\n\n⚜ **Versi Bot :** `7.0`\n⚜ **Module :** `{len(plugins)}`\n\n🔥 **Developer : [{DEFAULTUSER}]({OWNER_BOT}) **".format(
+                    text=f"{REPO_NAME}\n\n **Owner Bot : {DEFAULTUSER}**\n\n⚜ **Versi Bot :** `7.0`\n⚜ **Module :** `{len(plugins)}`\n\n **Developer : [{DEFAULTUSER}]({OWNER_BOT}) **".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
