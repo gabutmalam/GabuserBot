@@ -20,7 +20,7 @@ async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
     time_list = []
-    time_suffix_list = ["Sec", "M", "H", "D"]
+    time_suffix_list = ["sec", "mnt", "h", "D"]
 
     while count < 4:
         count += 1
@@ -43,31 +43,85 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(outgoing=True, pattern="^.sping$")
+@register(outgoing=True, pattern="^.sem$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("__Sabar.__")
-    await pong.edit("__Sabar..__")
-    await pong.edit("__Sabar...__")
-    await pong.edit("__Sabar....__")
-    await pong.edit("__Bentar.__")
-    await pong.edit("__Bentar..__")
-    await pong.edit("__Bentar...__")
-    await pong.edit("__Bentar....__")
-    await pong.edit("__Nah!!__")
+    await pong.edit("__Hai.__")
+    await pong.edit("__Haii..__")
+    await pong.edit("__Haiii...__")
+    await pong.edit("__Kau manggil akukah?....__")
+    await pong.edit("__Bentar ya...__")
+    await pong.edit("__Sabar__")
+    await pong.edit("__kamu sabar, aku makin sayang.__")
+    await pong.edit("__Bentar ya..__")
+    await pong.edit("__Bentarr lagi...__")
+    await pong.edit("__Ishh makin sayang deh sama kamu....__")
+    await pong.edit("__Mwehehehe......__")
+    await pong.edit("__Oh tidak, helpme...__")
+    await pong.edit("__Aku terjatuh__")
+    await pong.edit("__Tolong.__")
+    await pong.edit("__Tolong..__")
+    await pong.edit("__Tolong...__")
+    await pong.edit("__Tolong....__")
+    await pong.edit("😮")
+    await pong.edit("😲")
+    await pong.edit("😱")
+    await pong.edit("😭")
+    await pong.edit("__HUWAHAHAHAHA...😭__")
+    await pong.edit("😭")
+    await pong.edit("__Seseorang tolong aku pliesss...__")
+    await pong.edit("__terus ceritanya cwe2 pada dateng nih, mau nolongin, Mwehehehe...__")
+    await pong.edit("👱🏻‍♀️")
+    await pong.edit("🧕🏻")
+    await pong.edit("👰🏻)
+    await pong.edit("🧝")
+    await pong.edit("👩🏼‍⚖️")
+    await pong.edit("💁🏼‍♀️__mas kamu kenapa?..__")
+    await pong.edit("🤴🏼__hamil...__")
+    await pong.edit("👰🏻__pake nanya lagi__") 
+    await pong.edit("🤴__cepat panggil ambulan babe..__")
+    await pong.edit("👰🏻__iya2__")
+    await pong.edit("🤴__agak cepet dikit babe..__")
+    await pong.edit("👰🏻__📞 haloo, dokter suami saya sakit dokter  tolong bawa ambulan kesini...__")
+    await pong.edit("👨🏻‍⚕️ __Owh oke2 siap..__")
+    await pong.edit("👨🏻‍⚕️ __Otw__")
     await pong.edit("🚑")
+    await pong.edit("🚓")
+    await pong.edit("🚑")
+    await pong.edit("🚓")
+    await pong.edit("🚑")
+    await pong.edit("🚓")
+    await pong.edit("🚑")
+    await pong.edit("🚗")
+    await pong.edit("🚑")
+    await pong.edit("🚓")
+    await pong.edit("🚦")
+    await pong.edit("🚥")
+    await pong.edit("🚑__lanjut gasss...__")
+    await pong.edit("🚑__Mwehehehe..__")
+    await pong.edit("__🕌__ _ _ _ 🚑_ _ _")
+    await pong.edit("🚑__udah ashar, sholat dulu ga ni?__")
+    await pong.edit("👰🏻__hebat kalilah, terus kek mana suami kita?__")
+    await pong.edit("🚑__Mwehehehe..__")
+    await pong.edit("🚑__canda bu..__")
+    await pong.edit("**To be continue..**")
+    await pong.edit("
     await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"╭━━━━━━━━━━━━━━━━━╮ \n"
-                    f"        {REPO_NAME} \n"
-                    f"  ✠╼━━━━━━❖━━━━━━━✠ \n"
-                    f"        • sɪɢɴᴀʟ  : %sms \n"
-                    f"        • ᴏᴡɴᴇʀ   : {ALIVE_NAME} \n"
-                    f"        • ʙᴏᴛ ᴠᴇʀ  : 7.0 \n"
-                    f"╰━━━━━━━━━━━━━━━━━╯ \n" % (duration))
+    await pong.edit(f"    ➳༻❀✿❀༺➳ \n 
+                    f"-ˏˋ⋆ ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ ⋆ˊˎ- \n 
+                    f"  ║▌│█║▌│ █║▌│█│║▌║ \n"
+                    f"   **SiTampan As** \n"
+                    f"  ━─━────༺༻────━─━ \n"
+                    f"   • sɪɢɴᴀʟ  : %sms \n"
+                    f"   • ᴏᴡɴᴇʀ   : {ALIVE_NAME} \n"
+                    f"   • ʙᴏᴛ ᴠᴇʀ  : 7.0 \n"
+                    f"  ━─━────༺༻────━─━ \n"
+                    f"  ║▌│█║▌│ █║▌│█│║▌║
+                    f"    ➳༻❀☕️❀༺➳ \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.lping$")
@@ -82,9 +136,9 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**`{ALIVE_NAME}`**\n"
                     f"✧ **-ꜱɪɢɴᴀʟ- :** "
-                    f"`%sms` \n"
+                    f"    %sms \n"
                     f"✧ **-ᴜᴘᴛɪᴍᴇ- :** "
-                    f"`{uptime}` \n" % (duration))
+                    f"   {uptime} \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.xping$")
@@ -105,13 +159,13 @@ async def redis(pong):
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"╭✠╼━━━━━━❖━━━━━━━✠╮\n"
-                    f"┣[•**PONG!!**\n"
-                    f"┣[•__Signal__    __:__ "
-                    f"`%sms` \n"
-                    f"┣[•__Uptime__ __:__ "
-                    f"`{uptime}` \n"
-                    f"╰✠╼━━━━━━❖━━━━━━━✠╯\n" % (duration))
+    await pong.edit(f"╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\n"
+                    f"   •**PONG!!**\n"
+                    f"   •__Signal__    __:__ "
+                    f" %sms \n"
+                    f"   •__Uptime__ __:__ "
+                    f" {uptime} \n"
+                    f"•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯\n" % (duration))
 
 
 @register(outgoing=True, pattern="^.Ping$")
@@ -131,9 +185,9 @@ async def redis(pong):
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"╭✠╼━━━━━━❖━━━━━━━✠╮\n"
-                    f"            {REPO_NAME}\n"
-                    f"╰✠╼━━━━━━❖━━━━━━━✠╯\n"
+    await pong.edit(f"╭──           ೋ           ──╮\n"
+                    f"  {REPO_NAME}\n"
+                    f"╰──           ೋ           ──╯\n"
                     f" •  Sɪɢɴᴀʟ   : "
                     f"`%sms` \n"
                     f" •  Uᴘᴛɪᴍᴇ  : "
@@ -171,11 +225,11 @@ async def speedtst(spd):
                    f"`{result['timestamp']}` \n"
                    f" **━━━━━━━━━━━━━━━━━**\n\n"
                    "✧ **Download:** "
-                   f"`{speed_convert(result['download'])}` \n"
+                   f" {speed_convert(result['download'])} \n"
                    "✧ **Upload:** "
-                   f"`{speed_convert(result['upload'])}` \n"
+                   f" {speed_convert(result['upload'])} \n"
                    "✧ **Signal:** "
-                   f"`{result['ping']}` \n"
+                   f" {result['ping']} \n"
                    "✧ **ISP:** "
                    f"`{result['client']['isp']}` \n"
                    f"✧ **BOT:** {REPO_NAME}")
