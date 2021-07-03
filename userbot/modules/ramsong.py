@@ -106,8 +106,7 @@ async def download_video(event):
     Bang Sem Sedang Menyanyi, Mohon Menunggu Sebentar...
     **Title** - {}
     **Artis** - {}
-"""
-    .format(
+""".format(
         rip_data["title"], rip_data["uploader"]
     )
     await event.edit(f"`{upteload}`")
