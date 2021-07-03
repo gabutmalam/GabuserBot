@@ -2,8 +2,6 @@
 # Jangan Dihapuss!!!
 # Thanks Ultroid
 # Full Love From Vicky For All Lord
-# kontol
-
 
 import json
 import os
@@ -41,7 +39,7 @@ async def download_video(event):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await event.edit("`Tidak dapat menemukan lagu yang cocok...`")
+        return await event.edit("Tidak dapat menemukan lagu yang cocok...")
     type = "audio"
     await event.edit(f"waiting for downloading.. {url}...")
     if type == "audio":
@@ -103,9 +101,9 @@ async def download_video(event):
     except BaseException:
         pass
     upteload = """
-    Bang Sem Sedang Menyanyi, Mohon Menunggu Sebentar...
-    **Title** - {}
-    **Artis** - {}
+    Sem Sedang Menyanyi, Mohon tunggu Sebentar...
+    Judul - {}
+    Artis - {}
 """.format(
         rip_data["title"], rip_data["uploader"]
     )
@@ -114,7 +112,7 @@ async def download_video(event):
         event.chat_id,
         f"{rip_data['id']}.mp3",
         supports_streaming=True,
-        caption=f"**⫸ Title:** {rip_data['title']}\n**⫸ Artis:** {rip_data['uploader']}\n\n**⫸ Powered By:** 🌦 Searching...\n",
+        caption=f"⫸ **Title:** {rip_data['title']}\n⫸ **Artis:** {rip_data['uploader']}\n\n⫸** Powered By:** 🌦 Searching...\n",
         attributes=[
             DocumentAttributeAudio(
                 duration=int(rip_data["duration"]),
