@@ -38,9 +38,9 @@ async def insta(event):
     chat = "@SaveAsBot"
     reply_message.sender
     if reply_message.sender.bot:
-        await event.edit("`Memproses....`")
+        await event.edit("Processing...")
         return
-    await event.edit("`Memproses.....`")
+    await event.edit("__Processing...__")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
@@ -49,7 +49,7 @@ async def insta(event):
             await event.client.send_message(chat, reply_message)
             response = await response
         except YouBlockedUserError:
-            await event.edit("`Mohon Buka Blokir` @SaveAsbot `Lalu Coba Lagi`")
+            await event.edit("Bot gagal mengambil database file..")
             return
         if response.text.startswith("Forward"):
             await event.edit(
