@@ -75,7 +75,7 @@ async def redis(pong):
     await pong.edit("__terus ceritanya cwe2 pada dateng nih, mau nolongin, Mwehehehe...__")
     await pong.edit("👱🏻‍♀️")
     await pong.edit("🧕🏻")
-    await pong.edit("👰🏻)
+    await pong.edit("👰")
     await pong.edit("🧝")
     await pong.edit("👩🏼‍⚖️")
     await pong.edit("💁🏼‍♀️__mas kamu kenapa?..__")
@@ -114,7 +114,7 @@ async def redis(pong):
     await pong.edit(f"    ➳༻❀✿❀༺➳ \n 
                     f"-ˏˋ⋆ ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ ⋆ˊˎ- \n 
                     f"  ║▌│█║▌│ █║▌│█│║▌║ \n"
-                    f"   **SiTampan As** \n"
+                    f"   **Si** __Tampan__ **As** \n"
                     f"  ━─━────༺༻────━─━ \n"
                     f"   • sɪɢɴᴀʟ  : %sms \n"
                     f"   • ᴏᴡɴᴇʀ   : {ALIVE_NAME} \n"
