@@ -101,28 +101,29 @@ async def redis(pong):
     await pong.edit("🚥")
     await pong.edit("🚑__lanjut gasss...__")
     await pong.edit("🚑__Mwehehehe..__")
-    await pong.edit("__🕌__ _ _ _ 🚑_ _ _")
-    await pong.edit("🚑__udah ashar, sholat dulu ga ni?__")
+    await pong.edit("__ __ _🕌__ _ _ _ 🚑_ _ _")
+    await pong.edit("🚑_ __udah ashar, sholat dulu ga ni?__")
     await pong.edit("👰🏻__hebat kalilah, terus kek mana suami kita?__")
-    await pong.edit("🚑__Mwehehehe..__")
-    await pong.edit("🚑__canda bu..__")
+    await pong.edit("🚑 __Mwehehehe..__")
+    await pong.edit("🚑 __canda bu..__")
     await pong.edit("**To be continue..**")
     await pong.edit("🔥")
-    await pong.edit("😈")
     await asyncio.sleep(3)
+    await pong.edit("😈")
+    await asyncio.sleep(4)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"      ➳༻❀✿❀༺➳ \n" 
-                    f" -ˏˋ⋆ ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ ⋆ˊˎ- \n"
-                    f"      ➳༻❀✿❀༺➳ \n"
-                    f"    **Si**__Tampan__ **As** \n"
+    await pong.edit(f"ㅤㅤㅤㅤㅤㅤ➳༻❀✿❀༺➳ \n" 
+                    f"ㅤㅤㅤㅤㅤㅤ-ˏˋ⋆ ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ ⋆ˊˎ- \n"
+                    f"ㅤㅤㅤㅤㅤㅤ➳༻❀✿❀༺➳ \n\n"
+                    f"ㅤㅤㅤㅤㅤㅤ__Si__ **Tampan** __As__ \n\n"
                     f"    ━─━────༺༻────━─━ \n"
                     f"     • sɪɢɴᴀʟ  : %sms \n"
                     f"     • ᴏᴡɴᴇʀ   : {ALIVE_NAME} \n"
                     f"     • ʙᴏᴛ ᴠᴇʀ  : 7.0 \n"
                     f"    ━─━────༺༻────━─━ \n"
-                    f"↠ⁿᵉˣᵗ ˢᵒⁿᵍ ↺ ʳᵉᵖᵉᵃᵗ ⊜ ᵖᵃᵘˢᵉ \n"
-                    f"      ➳༻❀☕️❀༺➳ \n" % (duration))
+                    f"ㅤㅤㅤㅤㅤㅤ\n"
+                    f"ㅤㅤㅤㅤㅤㅤ➳༻❀☕️❀༺➳ \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.lping$")
@@ -193,7 +194,7 @@ async def redis(pong):
                     f"`%sms` \n"
                     f" •  Uᴘᴛɪᴍᴇ  : "
                     f"`{uptime}` \n"
-                    f" •  Oᴡɴᴇʀ   : `{ALIVE_NAME}` \n" 
+                    f" •  Oᴡɴᴇʀ   : {ALIVE_NAME} \n" 
                     f" •  ʙᴏᴛ ᴠᴇʀ  : `7.0` \n" % (duration))
 
 
@@ -202,11 +203,20 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
+    await pong.edit("Springkel!")
+    await pong.edit("Springkel.!")
     await pong.edit("Springkel..!")
+    await pong.edit("Springkel..!")
+    await pong.edit("Springkel...!")
+    await pong.edit("💫")
     await asyncio.sleep(1)
+    await pong.edit("⭐️")
+    await asyncio.sleep(2)
+    await pong.edit("🌟")
+    await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**█▀█ █▀█ █▄░█ █▀▀ █\n█▀▀ █▄█ █░▀█ █▄█ ▄**\n\n**✥ ✪ Mᴀsᴛᴇʀ:** __@CKLT27Asy__\n**✥ ✪ Tɪᴍᴇ Tᴀᴋᴇɴ:** : %sms\n▄︻デ 𝐁𝐨𝐭 𝐔𝐩𝐭𝐢𝐦𝐞 ══━一 : {uptime}" % (duration))
+    await pong.edit(f"**█▀█ █▀█ █▄░█ █▀▀ █\n█▀▀ █▄█ █░▀█ █▄█ ▄**\n\n**✥ ✪ Mᴀsᴛᴇʀ:** {ALIVE_NAME}\n**✥ ✪ Tɪᴍᴇ Tᴀᴋᴇɴ:** : %sms\n▄︻デ 𝐁𝐨𝐭 𝐔𝐩𝐭𝐢𝐦𝐞 ══━一 : {uptime}" % (duration))
 
 
 @register(outgoing=True, pattern="^.speed$")
