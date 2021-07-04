@@ -102,11 +102,13 @@ async def download_video(event):
         pass
     upteload = """
     
-    °.✩┈┈∘*┈🌙┈*∘┈┈✩.°
-    Sem Sedang Menyanyi, Mohon tunggu Sebentar...
+    ㅤㅤㅤㅤㅤ°.✩┈┈∘*┈🌙┈*∘┈┈✩.°
+    ㅤㅤㅤㅤㅤ
+    Sem Sedang Menyanyi, tunggu Sebentar...
     Judul - {}
     Artis - {}
-    °.✩┈┈∘*┈🌙┈*∘┈┈✩.°
+    ㅤㅤㅤㅤㅤ
+    ㅤㅤㅤㅤㅤ°.✩┈┈∘*┈🌙┈*∘┈┈✩.°
     
     """.format(
         rip_data["title"], rip_data["uploader"]
@@ -116,7 +118,7 @@ async def download_video(event):
         event.chat_id,
         f"{rip_data['id']}.mp3",
         supports_streaming=True,
-        caption=f"⫸ **Title:** {rip_data['title']}\n⫸ **Artis:** {rip_data['uploader']}\n\n⫸** Powered By:** 🌦 Searching...\n",
+        caption=f"⫸ **Title:** {rip_data['title']}\n⫸ **Artis:** {rip_data['uploader']}\n⫸** Powered By:** {ALIVE_NAME}\n",
         attributes=[
             DocumentAttributeAudio(
                 duration=int(rip_data["duration"]),
