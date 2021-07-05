@@ -55,7 +55,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari RAM-USERBOT.`'
+                ' untuk dapat deploy perubahan terbaru dari GabuserBot.`'
             )
             repo.__del__()
             return
@@ -68,8 +68,8 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 f'{txt}\n`Kredensial Heroku tidak valid untuk deploy GabuserBot dyno.'
             )
             return repo.__del__()
-        await event.edit(f'`{REPO_NAME}:'
-                         f'\nSedang Dalam proses Update {REPO_NAME}, Mohon Menunggu beberapa Menit`'
+        await event.edit(f'{REPO_NAME}:'
+                         f'\nSedang Dalam proses Update {REPO_NAME}, Mohon Menunggu beberapa Menit'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -93,14 +93,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit(f"`{REPO_NAME} Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu.....`")
+            await event.edit(f"{REPO_NAME} Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu.....")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`RAM-UBOT Berhasil Di Update`")
+                " GabuserBot Success for Updated")
 
     else:
         await event.edit('`[HEROKU]:'
