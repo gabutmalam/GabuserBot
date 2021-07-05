@@ -65,7 +65,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy RAM-UBOT dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy GabuserBot dyno.'
             )
             return repo.__del__()
         await event.edit(f'`{REPO_NAME}:'
@@ -121,14 +121,14 @@ async def update(event, repo, ups_rem, ac_br):
     await asyncio.sleep(1)
     await event.edit(f'**{REPO_NAME}** `Di Restart....`')
     await asyncio.sleep(1)
-    await event.edit('`Mohon Menunggu Beberapa Detik...ツ`')
+    await event.edit('Mohon Menunggu Beberapa Detik...ツ')
     await asyncio.sleep(10)
     await event.delete()
 
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**RAM-UBOT Telah Di Perbarui ツ**")
+            "**Bot Telah Di Perbarui ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -196,7 +196,7 @@ async def upstream(event):
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f"**Pembaruan Untuk {REPO_NAME} [{REPO_NAME}]:\n\n✨Pembaruan:**\n`{changelog}`"
+        changelog_str = f"**Pembaruan Untuk {REPO_NAME} [{REPO_NAME}]:\n\n👨🏼‍💻 Pembaruan:**\n`{changelog}`"
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -216,12 +216,12 @@ async def upstream(event):
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....1%`")
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....20%`")
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....35%`")
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....77%`")
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Updating...90%`")
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Mohon Menunggu....100%`")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....1%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....20%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....35%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....77%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Updating...90%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Mohon Menunggu....100%")
     if conf == "one":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(5)
