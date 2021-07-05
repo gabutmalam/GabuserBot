@@ -20,7 +20,7 @@ async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
     time_list = []
-    time_suffix_list = ["sec", "mnt", "h", "D"]
+    time_suffix_list = ["sec", "mnt", "h", "d"]
 
     while count < 4:
         count += 1
@@ -113,17 +113,15 @@ async def redis(pong):
     await asyncio.sleep(4)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"ㅤㅤㅤㅤㅤㅤ➳༻❀✿❀༺➳ \n" 
-                    f"ㅤㅤㅤㅤㅤㅤ-ˏˋ⋆ ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ ⋆ˊˎ- \n"
-                    f"ㅤㅤㅤㅤㅤㅤ➳༻❀✿❀༺➳ \n\n"
-                    f"ㅤㅤㅤㅤㅤㅤ__Si__ **Tampan** __As__ \n\n"
+    await pong.edit(f"ㅤㅤㅤㅤ" 
+                    f"ㅤㅤㅤ-ˏˋ⋆ ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ ⋆ˊˎ- \n"
+                    f"ㅤㅤㅤ__si__ **Tampan** **As** \n"
                     f"    ━─━────༺༻────━─━ \n"
                     f"     • sɪɢɴᴀʟ  : %sms \n"
                     f"     • ᴏᴡɴᴇʀ   : {ALIVE_NAME} \n"
                     f"     • ʙᴏᴛ ᴠᴇʀ  : 7.0 \n"
                     f"    ━─━────༺༻────━─━ \n"
-                    f"ㅤㅤㅤㅤㅤㅤ\n"
-                    f"ㅤㅤㅤㅤㅤㅤ➳༻❀☕️❀༺➳ \n" % (duration))
+                    f"ㅤㅤㅤㅤ➳༻❀☕️❀༺➳ \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.lping$")
@@ -203,17 +201,16 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("Springkel!")
-    await pong.edit("Springkel.!")
-    await pong.edit("Springkel..!")
-    await pong.edit("Springkel..!")
+    await pong.edit("Spri")
+    await pong.edit("Sprin")
+    await pong.edit("Spring")
+    await pong.edit("Springk")
+    await pong.edit("Springke")
+    await pong.edit("Springkel.")
+    await pong.edit("Springkel..")
     await pong.edit("Springkel...!")
-    await pong.edit("💫")
-    await asyncio.sleep(1)
-    await pong.edit("⭐️")
+    await pong.edit("🥵")
     await asyncio.sleep(2)
-    await pong.edit("🌟")
-    await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**█▀█ █▀█ █▄░█ █▀▀ █\n█▀▀ █▄█ █░▀█ █▄█ ▄**\n\n**✥ ✪ Mᴀsᴛᴇʀ:** {ALIVE_NAME}\n**✥ ✪ Tɪᴍᴇ Tᴀᴋᴇɴ:** : %sms\n▄︻デ 𝐁𝐨𝐭 𝐔𝐩𝐭𝐢𝐦𝐞 ══━一 : {uptime}" % (duration))
