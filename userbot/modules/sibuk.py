@@ -25,10 +25,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    f"{REPO_NAME}\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ \n\n𝐬𝐢𝐭𝐚𝐦𝐩𝐚𝐧 𝐬𝐞𝐝𝐚𝐧𝐠 𝐚𝐟𝐤..\n{ALIVE_NAME}\nJangan dicari dulu karena dia\n 🕊 𝐒𝐄𝐃𝐀𝐍𝐆 𝐀𝐅𝐊 🕊\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯",
-    f"{REPO_NAME}\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ \n\n𝐬𝐢𝐭𝐚𝐦𝐩𝐚𝐧 𝐬𝐞𝐝𝐚𝐧𝐠 𝐚𝐟𝐤..\n{ALIVE_NAME}\nJangan dicari dulu karena dia\n 🕊 𝐒𝐄𝐃𝐀𝐍𝐆 𝐀𝐅𝐊 🕊\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯",
-    f"{REPO_NAME}\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ \n\n𝐬𝐢𝐭𝐚𝐦𝐩𝐚𝐧 𝐬𝐞𝐝𝐚𝐧𝐠 𝐚𝐟𝐤..\n{ALIVE_NAME}\nJangan dicari dulu karena dia\n 🕊 𝐒𝐄𝐃𝐀𝐍𝐆 𝐀𝐅𝐊 🕊\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯",
-    f"{REPO_NAME}\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ \n\n𝐬𝐢𝐭𝐚𝐦𝐩𝐚𝐧 𝐬𝐞𝐝𝐚𝐧𝐠 𝐚𝐟𝐤..\n{ALIVE_NAME}\nJangan dicari dulu karena dia\n 🕊 𝐒𝐄𝐃𝐀𝐍𝐆 𝐀𝐅𝐊 🕊\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯",
+    f"{REPO_NAME}\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ \n\n`I'm currently AFK.`\nKangen calling aja breyy..😭\n{ALIVE_NAME}\nJangan dicari dulu karena dia\n 🕊 `𝐆𝐨𝐢𝐧𝐠 𝐀𝐅𝐊` 🕊\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯",
+    f"{REPO_NAME}\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ \n\n`I'm currently AFK.`\nKangen calling aja breyy..😭\n{ALIVE_NAME}\nJangan dicari dulu karena dia\n 🕊 `𝐆𝐨𝐢𝐧𝐠 𝐀𝐅𝐊` 🕊\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯",
+    f"{REPO_NAME}\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ \n\n`I'm currently AFK.`\nKangen calling aja breyy..😭\n{ALIVE_NAME}\nJangan dicari dulu karena dia\n 🕊 `𝐆𝐨𝐢𝐧𝐠 𝐀𝐅𝐊` 🕊\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯",
+    f"{REPO_NAME}\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ \n\n`I'm currently AFK.`\nKangen calling aja breyy..😭\n{ALIVE_NAME}\nJangan dicari dulu karena dia\n 🕊 `𝐆𝐨𝐢𝐧𝐠 𝐀𝐅𝐊` 🕊\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯",
 ]
 
 
@@ -63,9 +63,9 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"__{REPO_NAME}__\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦\n {ALIVE_NAME} 'Going AFK.'\n**Reason:** {AFKREASON}\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯")
+        await afk_e.edit(f"{REPO_NAME}\n\n╭┉┉┅┄┄┈•ೋ•◦❥•◦\n\n{ALIVE_NAME}\n `Going AFK.`\n\n**Reason:** {AFKREASON}\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯")
     else:
-        await afk_e.edit("'**I'm currently AFK.**'\n╭┉┉┅┄┄┈•ೋ•◦❥•◦ \n'Going AFK.'\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯")
+        await afk_e.edit("`**I'm currently AFK.**`\n╭┉┉┅┄┄┈•ೋ•◦❥•◦\n\n`Going AFK.`\n\n•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯")
     if user.last_name:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + " -ˋˏ ༻🥀༺ ˎˊ- "))
     else:
@@ -159,14 +159,14 @@ async def mention_afk(mention):
                     wday = now + datetime.timedelta(days=-days)
                     afk_since = wday.strftime('%A')
             elif hours > 1:
-                afk_since = f"`{int(hours)} Jam {int(minutes)} Menit`"
+                afk_since = f"`{int(hours)}h {int(minutes)}mnt`"
             elif minutes > 0:
-                afk_since = f"`{int(minutes)} Menit {int(seconds)} Detik`"
+                afk_since = f"`{int(minutes)}mnt {int(seconds)}sec`"
             else:
-                afk_since = f"`{int(seconds)} Detik`"
+                afk_since = f"`{int(seconds)}sec`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"'**I'm currently AFK.**'\n❀° ┄───────╮ \n{ALIVE_NAME} 'Going afk'\n'Last seen: {afk_since} ago'\n**Reason:** {AFKREASON}\n╰───────┄ °❀")
+                    await mention.reply(f"`**I'm currently AFK.**`\n❀° ┄───────╮\n{ALIVE_NAME}\n`Going afk`\n`Last seen: {afk_since} ago`\n\n**Reason:** {AFKREASON}\n╰───────┄ °❀")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
                 USERS.update({mention.sender_id: 1})
@@ -174,7 +174,7 @@ async def mention_afk(mention):
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply(f"{REPO_NAME}\n❀° ┄───────╮ \n{ALIVE_NAME} 'Going afk'\n'Last seen: {afk_since} ago'\n**Reason:** {AFKREASON}\n╰───────┄ °❀")
+                        await mention.reply(f"{REPO_NAME}\n❀° ┄───────╮ \n{ALIVE_NAME}\n`Going afk`\n`Last seen: {afk_since} ago`\n\n**Reason:** {AFKREASON}\n╰───────┄ °❀")
                     else:
                         await mention.reply(str(choice(AFKSTR)))
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1
@@ -241,7 +241,7 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)} Detik`"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(f"{REPO_NAME}\n❀° ┄───────╮ \n\n{ALIVE_NAME} 'Going afk'\n'Last seen: {afk_since} ago'\n**Reason:** {AFKREASON}\n\n╰───────┄ °❀")
+                    await sender.reply(f"{REPO_NAME}\n❀° ┄───────╮ \n\n{ALIVE_NAME}\n`Going afk`\n`Last seen: {afk_since} ago`\n**Reason:** {AFKREASON}\n\n╰───────┄ °❀")
                 else:
                     await sender.reply(str(choice(AFKSTR)))
                 USERS.update({sender.sender_id: 1})
@@ -249,7 +249,7 @@ async def afk_on_pm(sender):
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(f"{REPO_NAME}\n❀° ┄───────╮ \n\n{ALIVE_NAME} 'Going afk'\n'Last seen: {afk_since} ago'\n**Reason:** {AFKREASON}\n\n╰───────┄ °❀")
+                        await sender.reply(f"{REPO_NAME}\n❀° ┄───────╮ \n\n{ALIVE_NAME}\n`Going afk`\n`Last seen: {afk_since} ago`\n**Reason:** {AFKREASON}\n\n╰───────┄ °❀")
                     else:
                         await sender.reply(str(choice(AFKSTR)))
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
