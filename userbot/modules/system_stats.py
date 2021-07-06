@@ -30,7 +30,7 @@ async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
     time_list = []
-    time_suffix_list = ["Dtk", "Mnt", "Jam", "Hari"]
+    time_suffix_list = ["sec", "mnt", "h", "d"]
 
     while count < 4:
         count += 1
@@ -53,18 +53,18 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(outgoing=True, pattern=r"^\.spc")
+@register(outgoing=True, pattern=r"^\.system")
 async def psu(event):
     uname = platform.uname()
     softw = "**Informasi Sistem**\n"
-    softw += f"`Sistem   : {uname.system}`\n"
-    softw += f"`Rilis    : {uname.release}`\n"
-    softw += f"`Versi    : {uname.version}`\n"
-    softw += f"`Mesin    : {uname.machine}`\n"
+    softw += f"System   : {uname.system}\n"
+    softw += f"Rilis    : {uname.release}\n"
+    softw += f"Versi    : {uname.version}\n"
+    softw += f"Mesin    : {uname.machine}\n"
     # Boot Time
     boot_time_timestamp = psutil.boot_time()
     bt = datetime.fromtimestamp(boot_time_timestamp)
-    softw += f"`Waktu Hidup: {bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}`\n"
+    softw += f"Alive: {bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}`\n"
     # CPU Cores
     cpuu = "**Informasi CPU**\n"
     cpuu += "`Physical cores   : " + \
@@ -85,21 +85,21 @@ async def psu(event):
     # RAM Usage
     svmem = psutil.virtual_memory()
     memm = "**Memori Digunakan**\n"
-    memm += f"`Total     : {get_size(svmem.total)}`\n"
-    memm += f"`Available : {get_size(svmem.available)}`\n"
-    memm += f"`Used      : {get_size(svmem.used)}`\n"
-    memm += f"`Percentage: {svmem.percent}%`\n"
+    memm += f"Total     : {get_size(svmem.total)}\n"
+    memm += f"Available : {get_size(svmem.available)}\n"
+    memm += f"Used      : {get_size(svmem.used)}\n"
+    memm += f"Percentage: {svmem.percent}%\n"
     # Bandwidth Usage
     bw = "**Bandwith Digunakan**\n"
-    bw += f"`Unggah  : {get_size(psutil.net_io_counters().bytes_sent)}`\n"
-    bw += f"`Download: {get_size(psutil.net_io_counters().bytes_recv)}`\n"
+    bw += f"Unggah  : `{get_size(psutil.net_io_counters().bytes_sent)}`\n"
+    bw += f"Download: `{get_size(psutil.net_io_counters().bytes_recv)}`\n"
     help_string = f"{str(softw)}\n"
     help_string += f"{str(cpuu)}\n"
     help_string += f"{str(memm)}\n"
     help_string += f"{str(bw)}\n"
     help_string += "**Informasi Mesin**\n"
-    help_string += f"`Python {sys.version}`\n"
-    help_string += f"`Telethon {__version__}`"
+    help_string += f"Python {sys.version}\n"
+    help_string += f"Telethon {__version__}"
     await event.edit(help_string)
 
 
@@ -218,30 +218,30 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:ram|rambot)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:boy|goodboy)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`Perkenalan diri...`")
+    await alive.edit("Greeting...")
     await asyncio.sleep(1)
-    await alive.edit("⭐")
+    await alive.edit("😈")
     await asyncio.sleep(3)
     output = (
         f"**     ۩  ⬚⃝⃟    {REPO_NAME} ⬚⃝⃟     ۩ ** \n\n"
-        f"\n__**{RAM_TEKS_KOSTUM}**__\n"
+        f"\n__**{DEFAULTUSER}**__\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"**🤑 TUAN** \n"
-        f" ➥ `{DEFAULTUSER}` \n"
-        f"**😋 Username** \n"
-        f" ➥ `@{user.username}` \n"
+        f"**🤴🏼 Mr.** \n"
+        f" ➥  {DEFAULTUSER} \n"
+        f"**🎫 Username** \n"
+        f" ➥  @{user.username} \n"
         f"╭✠╼━━━━━━❖━━━━━━━✠╮\n"
-        f"┣• `🙈 Telethon :`Ver {version.__version__} \n"
-        f"┣• `🥴 Python   :`Ver {python_version()} \n"
-        f"┣• `🤖 Bot Ver  :`7.0 \n"
-        f"┣• `✨ Modules  :`{len(modules)} \n"
+        f"┣• ⚜️ Telethon :`Ver {version.__version__}` \n"
+        f"┣• ⚜️ Python   :`Ver {python_version()}` \n"
+        f"┣• ⚜️ Bot Ver  :`7.0` \n"
+        f"┣• ⚜️ Modules  :`{len(modules)}` \n"
         f"╰✠╼━━━━━━❖━━━━━━━✠╯\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/ramadhani892/RAM-UBOT) || [𝐆𝐑𝐎𝐔𝐏](t.me/ootspambot) \n"
+        f"[𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/gabutmalam/GabuserBot) || [𝐆𝐑𝐎𝐔𝐏](t.me/b0oooot) \n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
     if ALIVE_LOGO:
         try:
@@ -263,23 +263,23 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:ralive|ron)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
-        f"             **♕ {REPO_NAME} ♕** \n"
-        f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
-        f"❃ **Tuan**             ➥ `{DEFAULTUSER}` \n"
-        f"❃ **Username**    ➥ `@{user.username}` \n"
-        f"❃ **Telethon**       ➥ `Versi {version.__version__}` \n"
-        f"❃ **Python**          ➥ `Versi {python_version()}` \n"
-        f"❃ **Versi Bot**      ➥ `7.0` \n"
-        f"❃ **Modul**           ➥ `{len(modules)}` \n\n"
-        f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/ramadhani892/RAM-UBOT) || [𝗚𝗥𝗢𝗨𝗣](t.me/ootspambot) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
-        f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
+        f"╭──           ೋ           ──╮\n"
+        f"**♕ {REPO_NAME} ♕** \n"
+        f"╰──           ೋ           ──╯\n"
+        f"❃ **Tuan**             ➤ {DEFAULTUSER}\n"
+        f"❃ **Username**    ➤ @{user.username}\n"
+        f"❃ **Telethon**       ➤ `Versi {version.__version__}` \n"
+        f"❃ **Python**          ➤ `Versi {python_version()}` \n"
+        f"❃ **Versi Bot**      ➤ `7.0` \n"
+        f"❃ **Modul**           ➤ `{len(modules)}` \n\n"
+        f"**◇◆◇◆◇◆◇◆◇◇◆◇◆◇◆◇◆◇◇◆◇**\n"
+        f"[{REPO_NAME}](https://github.com/gabutmalam/GabuserBot) || [𝗚𝗥𝗢𝗨𝗣](t.me/B0oooot) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"**◇◆◇◆◇◆◇◆◇◇◆◇◆◇◆◇◆◇◇◆◇**")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -300,7 +300,7 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:rlive|ron)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
