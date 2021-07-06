@@ -117,9 +117,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit(f'**{REPO_NAME}** `Berhasil Di Update!`')
+    await event.edit(f'**{REPO_NAME}** Berhasil Di Update!')
     await asyncio.sleep(1)
-    await event.edit(f'**{REPO_NAME}** `Di Restart....`')
+    await event.edit(f'**{REPO_NAME}** Di Restart....')
     await asyncio.sleep(1)
     await event.edit('Mohon Menunggu Beberapa Detik...ツ')
     await asyncio.sleep(10)
@@ -128,7 +128,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**Bot Telah Di Perbarui ツ**")
+            "**GabuseBot Telah Di Perbarui ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -214,14 +214,14 @@ async def upstream(event):
 
     if force_update:
         await event.edit(
-            '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
+            'Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu ....')
     else:
-        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....1%")
-        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....20%")
-        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....35%")
-        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....77%")
-        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Updating...90%")
-        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, Mohon Menunggu....100%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, ▒▒▒▒▒▒▒▒▒▒1%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, █▒▒▒▒▒▒▒▒▒20%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, ███▒▒▒▒▒▒▒35%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, ███████▒▒▒77%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, ██████████99%")
+        await event.edit(f"{EMOJI_HELP} Proses Update {REPO_NAME}, ⋘ 𝑙𝑜𝑎𝑑𝑖𝑛𝑔 𝑑𝑎𝑡𝑎... ⋙100%")
     if conf == "one":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(5)
