@@ -118,7 +118,7 @@ async def download_video(event):
         event.chat_id,
         f"{rip_data['id']}.mp3",
         supports_streaming=True,
-        caption=f"⫸ **Title:** {rip_data['title']}\n⫸ **Artis:** {rip_data['uploader']}\n⫸** Powered By:** {ALIVE_NAME}\n",
+        caption=f"⫸ **Title:** {rip_data['title']}\n⫸ **Artis:** {rip_data['uploader']}\n⫸** Powered By:** ︵‿୨𝐀𝐬୧‿︵\n",
         attributes=[
             DocumentAttributeAudio(
                 duration=int(rip_data["duration"]),
