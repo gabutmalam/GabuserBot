@@ -99,7 +99,7 @@ async def redis(pong):
     await pong.edit("🚓")
     await pong.edit("🚦")
     await pong.edit("🚥")
-    await pong.edit("🚑__lanjut gasss...__")
+    await pong.edit("🚑_ __lanjut gasss...__")
     await pong.edit("🚑__Mwehehehe..__")
     await pong.edit("__ __ _🕌__ _ _ _ 🚑_ _ _")
     await pong.edit("🚑_ __udah ashar, sholat dulu ga ni?__")
@@ -114,14 +114,14 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"ㅤㅤㅤㅤ" 
-                    f"ㅤㅤㅤ-ˏˋ⋆ ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ ⋆ˊˎ- \n"
-                    f"ㅤㅤㅤ__si__ **Tampan** **As** \n"
+                    f"ㅤㅤ-ˏˋ⋆ ᴡ ᴇ ʟ ᴄ ᴏ ᴍ ᴇ ⋆ˊˎ- \n"
+                    f"ㅤㅤ**si** **Tampan** **As** \n"
                     f"    ━─━────༺༻────━─━ \n"
                     f"     • sɪɢɴᴀʟ  : %sms \n"
                     f"     • ᴏᴡɴᴇʀ   : {ALIVE_NAME} \n"
                     f"     • ʙᴏᴛ ᴠᴇʀ  : 7.0 \n"
-                    f"    ━─━────༺༻────━─━ \n"
-                    f"ㅤㅤㅤㅤ➳༻❀☕️❀༺➳ \n" % (duration))
+                    f"    ━─━────༺༻────━─━ \n\n"
+                    f"ㅤㅤ➳༻❀☕️❀༺➳ \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.lping$")
@@ -159,12 +159,12 @@ async def redis(pong):
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\n"
+    await pong.edit(f"╭┉┉┅┄┄┈•ೋ•◦❥•◦ೋ\n\n"
                     f"   •**PONG!!**\n"
-                    f"   •__Signal__    __:__ "
+                    f"   •**Signal**    __:__ "
                     f" %sms \n"
-                    f"   •__Uptime__ __:__ "
-                    f" {uptime} \n"
+                    f"   •**Uptime** __:__ "
+                    f" {uptime} \n\n"
                     f"•◦ೋ•◦❥•◦ೋ•┈┄┄┅┉┉╯\n" % (duration))
 
 
